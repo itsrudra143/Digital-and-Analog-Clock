@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Defines the document type as HTML -->
+<html lang="en">
+  <!-- Specifies the language of the document -->
+  <head>
+    <!-- Head section containing metadata and external resources -->
+    <meta charset="UTF-8" />
+    <!-- Defines the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Sets the viewport for responsive design -->
+    <title>Document</title>
+    <!-- Sets the title of the document -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Includes Tailwind CSS library -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Links to external stylesheet -->
+    <!-- Links to Font Awesome CSS files for various icon styles -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css"
+    />
+  </head>
+  <body
+    class="w-screen h-screen bg-cover bg-center bg-no-repeat bg-fixed overflow-x-hidden"
+  >
+    <!-- Body of the document -->
+    <div
+      class="w-full h-full flex items-center flex-wrap justify-center gap-6 md:flex-wrap w-10/12 sm:flex-wrap w-10/12"
+    >
+      <!-- Main flex container -->
+      <div
+        class="w-[28rem] h-[20rem] bg-white/10 backdrop-blur rounded-xl shadow-lg p-8 flex flex-col items-center justify-evenly"
+      >
+        <!-- Container for the digital clock -->
+        <div id="message" class="flex items-center justify-center gap-2">
+          <!-- Container for the greeting message and icon -->
+          <h1
+            id="time-text"
+            class="text-center text-4xl font-bold bg-gradient-to-r from-[#fdfcfb] to-[#e2d1c3] bg-clip-text text-transparent"
+          >
+            GOOD MORNING
+          </h1>
+          <!-- Greeting message -->
+          <i
+            id="time-icon"
+            class="fa-solid fa-mug-saucer text-4xl mt-1.5 bg-gradient-to-r from-[#fdfcfb] to-[#e2d1c3] bg-clip-text text-transparent"
+          ></i>
+          <!-- Icon representing morning -->
+        </div>
+        <div
+          id="digital-clock-container"
+          class="relative rounded-xl shadow-lg p-4 flex items-center justify-center shadow-black bg-gradient-to-r from-[#fdfcfb] to-[#e2d1c3]"
+        >
+          <!-- Container for the digital clock -->
+          <h1 id="digitalClock" class="text-black text-6xl font-semibold">
+            00:00:00
+          </h1>
+          <!-- Digital clock display -->
+        </div>
+      </div>
+      <div
+        class="w-[28rem] h-[20rem] bg-white/10 backdrop-blur rounded-xl shadow-lg p-8 flex items-center justify-center"
+      >
+        <!-- Container for the analog clock -->
+        <div
+          id="analog-clock-container"
+          class="flex items-center justify-center w-64 h-64 rounded-full relative shadow-inner shadow-black"
+        >
+          <!-- Container for the analog clock -->
+          <div
+            id="analog-clock"
+            class="w-full h-full shadow-2xl shadow-black rounded-full flex items-center justify-center bg-gradient-to-r from-[#fdfcfb] to-[#e2d1c3]"
+          >
+            <!-- Analog clock display -->
+            <div class="clock">
+              <!-- Clock hands -->
+              <div class="hand hour" id="hour"></div>
+              <!-- Hour hand -->
+              <div class="hand minute" id="minute"></div>
+              <!-- Minute hand -->
+              <div class="hand second" id="second"></div>
+              <!-- Second hand -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Includes JavaScript file -->
+  </body>
+</html>

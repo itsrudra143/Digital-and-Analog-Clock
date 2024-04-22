@@ -1,0 +1,45 @@
+body {
+  background-image: url("./Images/afternoon.jpg"); /* Sets the background image of the body */
+}
+
+.clock {
+  width: 200px; /* Sets the width of the clock */
+  height: 200px; /* Sets the height of the clock */
+  border: 4px solid black; /* Sets the border style of the clock */
+  border-radius: 50%; /* Makes the clock circular by setting border radius to 50% */
+  position: relative; /* Sets the clock's position relative to its containing element */
+}
+
+.hand {
+  position: absolute; /* Positions the clock hands absolutely inside the clock */
+  left: 50%; /* Positions the clock hands horizontally at the center of the clock */
+  bottom: 50%; /* Positions the clock hands vertically at the bottom of the clock */
+  transform-origin: bottom; /* Sets the origin point for rotation as the bottom center */
+}
+
+.hour {
+  width: 6px; /* Sets the width of the hour hand */
+  height: 40px; /* Sets the height of the hour hand */
+  background-color: black; /* Sets the background color of the hour hand */
+  transform: rotate(
+    0deg
+  ); /* Initializes the rotation of the hour hand to 0 degrees */
+}
+
+.minute {
+  width: 4px; /* Sets the width of the minute hand */
+  height: 60px; /* Sets the height of the minute hand */
+  background-color: black; /* Sets the background color of the minute hand */
+  transform: rotate(
+    0deg
+  ); /* Initializes the rotation of the minute hand to 0 degrees */
+}
+
+.second {
+  width: 2px; /* Sets the width of the second hand */
+  height: 80px; /* Sets the height of the second hand */
+  background-color: red; /* Sets the background color of the second hand */
+  transform: rotate(
+    0deg
+  ); /* Initializes the rotation of the second hand to 0 degrees */
+}
